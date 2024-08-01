@@ -2,6 +2,8 @@
 """
 Module for a method that determines if all the boxes in a list can be unlocked.
 """
+
+
 def canUnlockAll(boxes):
     """
     Determines if all the boxes in the list can be unlocked.
@@ -24,7 +26,7 @@ def canUnlockAll(boxes):
 
     while stack:
         current = stack.pop()
-        #iterate keys in current box
+        # iterate keys in current box
         for key in boxes[current]:
             # check if key is valid and not visited yet
             if key < n and not visited[key]:
