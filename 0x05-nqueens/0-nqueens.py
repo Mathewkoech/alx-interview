@@ -34,7 +34,7 @@ def solve(n):
     y = 0
     for solution in queens(n, 0):
         for s in solution:
-            x.append([i, s])
+            x.append([y, s])
             y += 1
         print(x)
         x = []
