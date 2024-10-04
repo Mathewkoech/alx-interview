@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 
 """Prime Game Module"""
+
+
 def isWinner(x, nums):
     """returns the name of the player that won the most rounds"""
     if not nums or x < 1:
         return None
     n = max(nums)
-    filters =[True for _ in range(n + 1)]
+    filters = [True for _ in range(n + 1)]
     filters[0] = filters[1] = False
     for i in range(2, n + 1):
         if filters[i]:
